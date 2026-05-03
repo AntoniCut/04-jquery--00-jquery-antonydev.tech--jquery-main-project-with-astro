@@ -1,0 +1,76 @@
+---
+
+/*
+    *  -------------------------------------------------------------------------------  * 
+    *  -----  MainBooks.astro  --  /src/components/layout/books/MainBooks.astro  -----  *
+    *  -------------------------------------------------------------------------------  *
+*/
+
+
+import '@styles/layout/layout-main.css';
+import '@styles/pages/05-books.css';
+
+---
+
+
+<!--
+    -----------------------------     
+    ----------  MAIN  ----------  
+    -----------------------------
+-->
+<main class="layout__main">
+
+
+    <div class="main__container">
+
+
+        <!--  
+            ------------------------------
+            -----  Libros de jQuery  -----
+            ------------------------------
+        -->
+        
+        <h2 
+            class="main__title"
+            title="Libros de jQuery"
+        >
+            Libros de jQuery
+        </h2>
+
+
+        <section class="main__section main__section--books">
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Aprende jQuery con 100 Ejercicios Prácticos - marcombo.com /&gt; 
+                </h3>
+
+                <a href="#">
+                    <img 
+                        class="card__img" 
+                        src="/assets/img/books/01-aprende-jquery-con-100-ejercicios-practicos.avif"
+                        alt="Aprende jQuery con 100 ejercicios prácticos"
+                        loading="lazy"
+                    >
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img 
+                        class="github-logo github-logo--main"
+                        src="/assets/img/github/github-icon.svg"
+                        alt="Logo GitHub"
+                        loading="lazy"
+                    >
+                </a>
+                
+
+            </article>
+
+        </section>
+
+    </div>
+
+</main>

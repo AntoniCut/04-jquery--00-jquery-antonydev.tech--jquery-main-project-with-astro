@@ -1,0 +1,940 @@
+---
+
+/*
+    *  ----------------------------------------------------------------------------  * 
+    *  -----  MainHome.astro  --  /src/components/layout/home/MainHome.astro  -----  *
+    *  ----------------------------------------------------------------------------  *
+*/
+
+
+import '@styles/layout/layout-main.css';
+import '@styles/pages/00-home.css';
+
+---
+
+
+<!--
+    -----------------------------     
+    ----------  MAIN  ----------  
+    -----------------------------
+-->
+<main class="layout__main">
+
+
+
+    <div class="main__container">
+
+
+        <!--  
+            -------------------------------------------
+            -----  Descripción de la Página  ----------
+            -------------------------------------------  
+        -->
+        <h2 
+            class="main__title"
+            title="Bienvenido a mis desarollos con jQuery"
+        >
+            Bienvenido a mis desarollos con jQuery
+        </h2>
+
+
+        <section class="main__section main__section--home">
+
+            <h3 class="emoji-title">
+                
+                <!--  -----  Icon de jQuery -----  -->
+                <a href="https://jquery.com/" target="_blank" rel="noopener noreferrer">
+                    <img 
+                        class="jquery-icon"
+                        src="/assets/img/jquery/jquery-icon.svg"
+                        alt="Logo jQuery"
+                        loading="lazy"
+                    >
+                </a>
+                
+                ⭐ Descripción de mis proyectos con jQuery 
+            
+                <!--  -----  Icon de jQuery UI -----  -->
+                <a href="https://jqueryui.com/" target="_blank" rel="noopener noreferrer">
+                    <img 
+                        class="jquery-ui-icon"
+                        src="/assets/img/jquery-ui/jquery-ui-icon.svg"
+                        alt="Logo jQuery UI"
+                        loading="lazy"
+                    >
+                </a>
+                    
+            </h3>
+
+            <div class="block">
+                
+                <p>
+                    ¡Hola! Soy Antonio Francisco Cutillas García, desarrollador frontend y entusiasta de jQuery.
+                    Desde que comencé mi viaje en el desarrollo web, jQuery ha sido una herramienta fundamental
+                    para entender la manipulación del DOM, eventos, animaciones y AJAX de una manera sencilla
+                    y efectiva.
+                </p>
+
+                <p>
+                    En este sitio encontrarás una recopilación completa de todos mis proyectos, prácticas y ejercicios
+                    desarrollados a partir de cursos, manuales, videotutoriales y libros dedicados al ecosistema jQuery.
+                    Mi objetivo es preservar, estudiar y poner en práctica las bases clásicas del frontend moderno,
+                    entendiendo
+                    cómo funciona jQuery desde cero y aplicándolo en contextos reales: manipulación del DOM, animaciones,
+                    AJAX,
+                    UI, componentes, plugins, eventos y desarrollo web interactivo.
+                </p>
+
+                <p>
+                    A lo largo de esta plataforma he organizado mis proyectos por fuente de aprendizaje, incluyendo:
+                </p>
+
+            </div>
+
+
+            <!-- 
+                ----------------------
+                -----  📘 UDEMY  -----  
+                ----------------------
+            -->
+            
+            <h3 class="emoji-title">
+                
+                <!--  -----  Logo de Udemy -----  -->
+                <img
+                class="cursos__logos cursos__logos--udemy"
+                    src="/assets/img/udemy/udemy.avif"
+                    alt="Logo Udemy"
+                    loading="lazy"
+                >
+                📘 Cursos de Udemy 
+            </h3>
+
+            <div class="block">
+                <p>
+                    Colección de proyectos extraídos de diferentes formaciones, que abarcan desde la introducción a jQuery
+                    hasta ejercicios avanzados, trucos profesionales, uso de jQuery UI y desarrollo de interfaces dinámicas.
+                    Cada tarjeta enlaza al contenido del curso e incluye ejemplos prácticos concretos, pequeñas aplicaciones
+                    y demostraciones realizadas durante mi proceso de aprendizaje.
+                </p>
+            </div>
+
+
+            <!-- 
+                -------------------------
+                -----  ▶️ YOUTUBE  -----  
+                -------------------------
+            -->
+
+            <h3 class="emoji-title">
+                
+                <!--  -----  Logo de YouTube -----  -->
+                <img
+                    class="cursos__logos cursos__logos--youtube"
+                    src="/assets/img/youtube/youtube.avif"
+                    alt="Logo YouTube"
+                    loading="lazy"
+                >
+                ▶️ Cursos de YouTube
+            </h3>
+
+            <div class="block">
+                <p>
+                    Implementaciones basadas en tutoriales de creadores reconocidos como CódigoFacilito, Dani Code,
+                    MiduDev, Píldoras Informáticas y otros profesores que enseñan jQuery desde distintos enfoques.
+                    Estos proyectos representan ejercicios rápidos, utilidades comunes y experimentos con eventos, efectos
+                    y componentes clásicos de jQuery.
+                </p>
+            </div>
+
+
+            <!-- 
+                -----------------------------------
+                -----  🌐 DESARROLLOWEB.COM  -----  
+                -----------------------------------
+            -->
+            
+            <h3 class="emoji-title">
+                
+                <!--  -----  Logo de Desarrolloweb.com -----  -->
+                <img
+                    class="cursos__logos cursos__logos--desarrollowebcom"
+                    src="/assets/img/desarrolloweb.com/desarrollowebcom.avif"
+                    alt="Logo Desarrolloweb.com"
+                    loading="lazy"
+                >
+                🌐 Material de desarrolloweb.com
+            </h3>
+
+            <div class="block">
+                <p>
+                    Proyectos derivados de manuales y talleres clásicos de jQuery, incluyendo jQuery UI, jQuery Mobile
+                    y otros contenidos históricos que marcaron la base de muchas técnicas frontend actuales.
+                    Aquí encontrarás prácticas completas, experimentos y versiones implementadas por mí basadas en los
+                    ejemplos originales.
+                </p>
+            </div>
+
+
+            <!-- 
+                ----------------------------
+                -----  🏫 ESCUELA.IT  ----- 
+                ---------------------------- 
+            -->  
+
+            <h3 class="emoji-title">
+                
+                <!--  -----  Logos de Escuela.it -----  -->
+                <img
+                    class="cursos__logos cursos__logos--escuela-it"
+                    src="/assets/img/escuela.it/escuelait.avif"
+                    alt="Logo Escuela.it"
+                    loading="lazy"
+                >
+                🏫 Curso de escuela.it
+            </h3>
+
+            <div class="block">
+                <p>
+                    Reproducción y adaptación de ejercicios propuestos en este curso formativo, aplicando buenas prácticas,
+                    organización de código y ejemplos basados en casos reales.
+                </p>
+            </div>
+
+
+            <!--
+                ----------------------------------------     
+                -----  📚 Libros y ManualesjQuery  ----- 
+                ----------------------------------------
+            -->
+
+            <h3 class="emoji-title">
+                
+                <!--  -----  Banner de jQuery Books -----  -->
+                <img
+                    class="cursos__logos cursos__logos--jquery-books"
+                    src="/assets/img/books/jquery-books.avif"
+                    alt="Logo jQuery Books"
+                    loading="lazy"
+                >
+
+                📚 Libros y Manuales
+
+                <!--  -----  Logos de jQuery Manuales -----  -->
+                <img
+                    class="cursos__logos cursos__logos--jquery-manuales"
+                    src="/assets/img/manuales/jquery-manuales.avif"
+                    alt="Logo jQuery Manuales"
+                    loading="lazy"
+                >
+                
+            </h3>
+
+            <div class="block">
+                <p>
+                    Ejercicios prácticos desarrollados a partir de libros como <em> Aprende jQuery con 100 Ejercicios Prácticos </em>
+                    y otros manuales clásicos. Estos proyectos incluyen desde funciones esenciales hasta ejercicios complejos
+                    aplicando jQuery de forma progresiva.
+                </p>
+            </div>
+
+
+            <!-- 
+                -------------------------
+                -----  🔧 OBJETIVO  ----- 
+                -------------------------
+            -->
+
+            <h3 class="emoji-title">🔧 Objetivo del sitio </h3>
+
+            <div class="block">
+                <p> Este sitio no solo recopila mis prácticas: </p>
+
+                <ul>
+                    <li> ✔ Es un archivo vivo de aprendizaje </li>
+                    <li> ✔ Un espacio para practicar, experimentar y documentar </li>
+                    <li> 
+                        ✔ Un entorno donde aplico plugins propios, componentes reutilizables 
+                        y carga dinámica de contenido mediante jQuery
+                    </li>
+                </ul>
+
+                <p>Además, la web está construida usando un pequeño mini–framework SPA creado por mí sobre jQuery, con:</p>
+
+                <ul>
+                    <li> ✔ sistema de rutas </li>
+                    <li> ✔ carga dinámica de componentes HTML </li>
+                    <li> ✔ inyección de estilos y scripts por vista </li>
+                    <li> ✔ manejo de favicon, títulos, UI y navegación </li>
+                    <li> ✔ arquitectura modular basada en buenas prácticas </li>
+                </ul>
+            </div>
+
+
+            <!-- 
+                -------------------------
+                -----  🎯 RESUMEN  ----- 
+                -------------------------
+            -->
+
+            <h3 class="emoji-title"> 🎯 En resumen </h3>
+
+            <div class="block">
+                <p>
+                    Este proyecto es una plataforma personal, educativa y de referencia donde reúno todo mi recorrido
+                    aprendiendo jQuery, organizando cada ejemplo y manteniendo un entorno limpio, estructurado y actualizado
+                    donde cualquiera puede consultar, revisar o experimentar con estos desarrollos.
+                </p>
+            </div>
+
+        </section>
+
+
+
+        <!--  
+            -----------------------------
+            -----  Cursos de Udemy  -----
+            -----------------------------  
+        -->
+
+        <h2 
+            class="main__title"
+            title="Mis Proyectos jQuery de Udemy"
+        >
+            Mis Proyectos jQuery de Udemy
+        </h2>
+
+
+        <section class="main__section">
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Aprendiendo jQuery del Master JavaScript <br> Clasico /&gt;
+                </h3>
+
+                <a href="/01-udemy/01-jquery-master-javascript-clasico/">
+                    <img class="card__img" src="/assets/img/udemy/01-aprendiendo-jquery-master-javascript-clasico.avif"
+                        alt="Aprendiendo jQuery del Master JavaScript Clasico" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; jQuery de Cero a Avanzado /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/udemy/02-jquery-de-cero-a-avanzado.avif"
+                        alt="jQuery de Cero a Avanzado - Legacy" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; jQuery Avanzado - 100 Trucos Profesionales /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/udemy/03-jquery-100-trucos-profesionales.avif"
+                        alt="jQuery 100 Trucos Profesionales" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Todo jQuery... de Novato a Experto /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/udemy/04-todo-jquery-de-novato-a-experto.avif"
+                        alt="Todo jQuery de Novato a Experto" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; jQuery y AJAX desde Cero - La Guia Definitiva (2014) /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/udemy/05-jquery-y-ajax-desde-cero-la-guia-definitiva-2014.avif"
+                        alt="jQuery y Ajax desde Cero - La Guía Definitiva 2014" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Aprende jQuery y jQuery UI de Forma Facil y Práctica /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img"
+                        src="/assets/img/udemy/06-aprende-jquery-y-jquery-ui-de-forma-facil-y-practica.avif"
+                        alt="Aprende jQuery y jQuery UI de forma fácil y práctica" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; jQuery in Action - Build 20 jQuery Projects /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/udemy/07-jquery-in-action-build-20-jquery-project.avif"
+                        alt="jQuery in Action - Build 20 jQuery Projects" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; jQuery UI in Action - Build 13 jQuery UI <br> Projects /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/udemy/08-jquery-ui-in-action-build-13-jquery-ui-project.avif"
+                        alt="jQuery UI in Action - Build 13 jQuery UI Projects" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; jQuery Create Overlay PopUps From Scatch Using jQuery /&gt;
+                </h3>
+                <a href="#">
+                    <img class="card__img" src="/assets/img/udemy/09-jquery-create-overlay-popups.avif"
+                        alt="jQuery Create Overlay Popups" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Aprende jQuery para Implementar Tus Aplicaciones Web /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img"
+                        src="/assets/img/udemy/10-aprende-jquery-para-implementar-tus-aplicaciones-web.avif"
+                        alt="Aprende jQuery para Implementar tus Aplicaciones Web" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Complete jQuery and AJAX Programming Curriculum (2014) /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/udemy/11-complete-jquery-programming-curriculum-2014.avif"
+                        alt="Complete jQuery Programming Curriculum 2014" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!--  
+            -------------------------------
+            -----  Cursos de Youtube  -----
+            -------------------------------  
+        -->
+
+        <h2 
+            class="main__title"
+            title="Mis Proyectos jQuery de Youtube"
+        >
+            Mis Proyectos jQuery de Youtube
+        </h2>
+
+
+        <section class="main__section">
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Curso jQuery Código Facilito de YouTube /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/youtube/01-curso-jquery-codigo-facilito.avif"
+                        alt="Curso jQuery Código Facilito" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Cursos jQuery de Dani Code de YouTube /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/youtube/02-curso-jquery-dani-code.avif"
+                        alt="Curso jQuery de Dani Code" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Curso jQuery Píldoras Informáticas de YouTube /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/youtube/03-curso-jquery-pildoras-informaticas.avif"
+                        alt="Curso jQuery Píldoras Informáticas" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Curso jQuery Código Mentor de YouTube /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/youtube/04-curso-jquery-codigo-mentor.avif"
+                        alt="Curso jQuery de Novato a Experto" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Curso jQuery MiduDev de YouTube /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/youtube/05-curso-jquery-midudev.avif" alt="Curso jQuery Midudev"
+                        loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Curso jQuery Jesus Conde de YouTube /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/youtube/06-curso-jquery-jeus-conde.avif"
+                        alt="Curso jQuery Jeus Conde" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+        </section>
+
+
+
+        <!--  
+            -----------------------------------------
+            -----  Cursos de desarrolloweb.com  -----
+            -----------------------------------------
+        -->
+
+        <h2 
+            class="main__title"
+            title="Mis Proyectos jQuery de desarrolloweb.com"
+        >
+            Mis Proyectos jQuery de desarrolloweb.com
+        </h2>
+
+
+        <section class="main__section">
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Manual de jQuery - desarrolloweb.com /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/desarrolloweb.com/01-jquery-manuales.avif"
+                        alt="jQuery Manuales - desarrolloweb.com" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Videotutoriales de jQuery - desarrolloweb.com /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/desarrolloweb.com/02-jquery-videotutoriales.avif"
+                        alt="jQuery Videotutoriales - desarrolloweb.com" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Taller de jQuery - desarrolloweb.com /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/desarrolloweb.com/03-taller-de-jquery.avif"
+                        alt="Taller de jQuery - desarrolloweb.com" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Manual de jQuery UI - desarrolloweb.com /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/desarrolloweb.com/04-manual-de-jquery-ui.avif"
+                        alt="Manual de jQuery UI - desarrolloweb.com" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Manual de jQuery Mobile - desarrolloweb.com /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/desarrolloweb.com/05-manual-de-jquery-mobile.avif"
+                        alt="Manual de jQuery Mobile - desarrolloweb.com" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; jQuery IO - desarrolloweb.com /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/desarrolloweb.com/06-jquery-io.avif"
+                        alt="jQuery IO - desarrolloweb.com" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+            </article>
+
+
+        </section>
+
+
+
+        <!--  
+            -------------------------------------
+            -----  Curso jQuery escuela.it  -----
+            -------------------------------------
+        -->
+
+        <h2 
+            class="main__title"
+            title="Curso jQuery de escuela.it"
+            >
+            Curso jQuery de escuela.it
+        </h2>
+
+
+        <section class="main__section main__section--escuela-it">
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Curso de jQuery - escuela.it /&gt;
+                </h3>
+
+                <a href="/escuelait/curso-jquery-escuelait/">
+                    <img class="card__img" src="/assets/img/escuela.it/jquery-escuela-it.avif"
+                        alt="Curso jQuery de escuela.it" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+
+            </article>
+
+        </section>
+
+
+
+        <!--  
+            ------------------------------
+            -----  Libros de jQuery  -----
+            ------------------------------
+        -->
+
+        <h2 
+            class="main__title"
+            title="Libros de jQuery"
+        >
+            Libros de jQuery
+        </h2>
+
+
+        <section class="main__section main__section--books">
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Aprende jQuery con 100 Ejercicios Prácticos - marcombo.com /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/books/01-aprende-jquery-con-100-ejercicios-practicos.avif"
+                        alt="Aprende jQuery con 100 ejercicios prácticos" loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+
+            </article>
+
+        </section>
+
+
+        <!--  
+            --------------------------------
+            -----  Manuales de jQuery  -----
+            --------------------------------
+        -->
+
+        <h2 
+            class="main__title"
+            title="Manuales de jQuery"
+        >
+            Manuales de jQuery
+        </h2>
+
+
+        <section class="main__section main__section--manuales">
+
+
+            <article class="section__card">
+
+                <h3 class="card__title">
+                    &lt; Manuales de jQuery /&gt;
+                </h3>
+
+                <a href="#">
+                    <img class="card__img" src="/assets/img/manuales/jquery-manuales.avif" alt="Manuales de jQuery"
+                        loading="lazy">
+                </a>
+
+                <!--  -----  logo de GitHub -----  -->
+                <a href="https://github.com/AntoniCut/jquery.antonydev.tech" target="_blank" rel="noopener noreferrer">
+                    <img class="github-logo github-logo--main" src="/assets/img/github/github-icon.svg" alt="Logo GitHub"
+                        loading="lazy">
+                </a>
+
+
+            </article>
+
+        </section>
+
+    </div>
+
+</main>

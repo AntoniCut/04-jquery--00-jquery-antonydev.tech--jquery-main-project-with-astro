@@ -1,23 +1,79 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+/*
+    *  ---------------------------------------------------------  * 
+    *  -----  Layout.astro  --  /src/layouts/Layout.astro  -----  *
+    *  ---------------------------------------------------------  *
+*/
+
+
+import { ClientRouter } from "astro:transitions";
+
+import Loader from '@components/layout/Loader.astro';
+import { defaultJQueryUiThemeHref } from '@scripts/jquery-ui-theme-urls';
+
+import '@styles/reset.css';
+import '@styles/view-transition.css';
+import '@styles/fonts/montserrat.css';
+
+import '@styles/layout/layout.css';
+
+
+interface Props {
+    
+    /** -----  `Título de la página` ----- */
+    titlePage: string;
+}
+
+const { titlePage } = Astro.props as Props;
+
+
+---
+
+
+<!doctype html>
+<html lang="es">
+	
+    <head>
+		
+        <meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+        <meta name="description" content="Mis desarrollos con jQuery by AntonyDevTech Freelancer." />
+        <meta name="theme-color" content="#F7E7C0" />
+        <meta name="MobileOptimized" content="width" />
+        <meta name="HandheldFriendly" content="true" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		
+        <link rel="icon" type="image/svg+xml" href="/assets/favicon/jquery-favicon.svg" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="apple-touch-icon" href="/manifest/jquery-logo-512x512.png" />
+        <link id="theme" rel="stylesheet" href={defaultJQueryUiThemeHref} />
+		<meta name="generator" content={Astro.generator} />
+		
+        <title> {titlePage} </title>
+        <ClientRouter />
+
+	</head>
+
+	<body>
+
+		<Loader />
+		
+        <slot />
+
+        <script>
+            
+            import { initializeMain, initializePageLoader } from '../scripts/main.ts';
+
+            initializePageLoader();
+
+            document.addEventListener('astro:page-load', () => {
+                void initializeMain();
+            });
+
+        </script>
+
+	</body>
+
+</html>

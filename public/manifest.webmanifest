@@ -1,0 +1,23 @@
+{
+  "name": "jquery.antonydev.tech Astro",
+  "short_name": "jquery.antonydev.tech",
+  "description": "Aplicación PWA desarrollada con Astro, TypeScript, jQuery y jQuery UI para jquery.antonydev.tech.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#F7E7C0",
+  "icons": [
+    {
+      "src": "/manifest/jquery-logo-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/manifest/jquery-logo-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

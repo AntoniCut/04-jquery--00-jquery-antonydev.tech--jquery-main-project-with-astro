@@ -1,0 +1,410 @@
+---
+
+
+/*
+    *  --------------------------------------------------------------------------------  * 
+    *  -----  FooterHome.astro  --  /src/components/layout/home/FooterHome.astro  -----  *
+    *  --------------------------------------------------------------------------------  *
+*/
+
+
+import '@styles/layout/layout-footer.css';
+
+
+---
+
+
+<!--  
+    ------------------------------
+    ----------  FOOTER  ----------
+    ------------------------------  
+-->
+<footer class="layout__footer">
+
+
+    <div class="footer__container">
+
+
+        <!--
+            ---------------------------
+            -----  Footer Header  -----
+            ---------------------------
+        -->
+
+        <header class="footer__header">
+
+
+            <!--  -----  Contenedor del logo y del icon de jQuery  -----  -->
+            <div class="footer__container-logos">
+
+                <!--  -----  Logo jQuery  -----  -->
+                <a href="https://jquery.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="footer__jquery-logo" src="/assets/img/jquery/jquery-logo.svg" alt="Banner jQuery"
+                        loading="lazy">
+                </a>
+
+                <!--  -----  Icon jQuery  -----  -->
+                <a href="https://jquery.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="footer__jquery-icon" src="/assets/img/jquery/jquery-icon.svg" alt="Logo jQuery"
+                        loading="lazy">
+                </a>
+
+            </div>
+
+
+            <!--  -----  contenedor del Título del Footer  -----  -->
+            <div class="footer__container-title">
+
+                <!--  -----  Título del Footer  -----  -->
+                <h1 class="footer__title">
+
+                    &lt; Mis jQuery Desarrollos /&gt;
+
+                    <!--  -----  renderizado del título con el plugin de jQuery  -----  -->
+
+                    <p id="footerTitle"> </p>
+                    &lt; By AntonyDev /&gt;
+
+                </h1>
+
+            </div>
+
+
+            <!--  -----  Contenedor del logo y del Icono de jQuery UI  -----  -->
+            <div class="footer__container-logos">
+
+                <!--  -----  Logo jQuery UI  -----  -->
+                <a href="https://jqueryui.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="footer__jquery-ui-logo" src="/assets/img/jquery-ui/jquery-ui-logo.avif"
+                        alt="Banner jQuery UI" loading="lazy">
+                </a>
+
+                <!--  -----  Icon jQuery UI  -----  -->
+                <a href="https://jqueryui.com/" target="_blank" rel="noopener noreferrer">
+                    <img class="footer__jquery-ui-icon" src="/assets/img/jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery UI"
+                        loading="lazy">
+                </a>
+
+            </div>
+
+        </header>
+
+
+        <!--
+            -------------------------
+            -----  Footer Main  -----
+            -------------------------
+        -->
+
+        <main class="footer__main">
+
+
+            <!--  -----  list home  -----  -->
+            <ul class="footer__list footer__list--home">
+                
+                <li class="footer__list-title"> 
+                    <h3> jQuery Desarrollos </h3>
+                </li>
+                
+                <li class="footer__item">
+                <a href="#" data-id="home"> 
+                    jQuery.antonydev.tech
+                    </a>
+                </li>
+
+                <div class="footer__list-separator"> </div>
+
+            </ul> 
+
+
+            <!--  
+                ------------------------
+                -----  List Udemy  -----
+                ------------------------  
+            -->
+            <ul class="footer__list footer__list--udemy">
+
+                <li class="footer__list-title">
+                    <h3> jQuery Udemy </h3>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        1 - jQuery Master JavaScript Clásico
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        2 - jQuery de Cero a Avanzado
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        3 - jQuery 100 Trucos Profesionales
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        4 - Todo jQuery de Novato a Experto
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        5 - jQuery y AJAX Desde Cero - La Guia Definitiva
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        6 - Aprende jQuery y jQuery UI de Forma Facil y Práctica
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        7 - jQuery in Action: Build 20 jQuery Projects
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        8 - jQuery UI in Action: Build 13 jQuery UI Projects
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        9 - jQuery Create Overlays! PoPups
+                    </a>
+                </li>
+
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        10 - Aprende jQuery para Implementar 
+                        <br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tus Aplicaciones Web
+                    </a>
+                </li>
+
+                <div class="footer__list-separator"> </div>
+
+            </ul>
+
+
+            <!--  
+                --------------------------
+                -----  List Youtube  -----
+                --------------------------  
+            -->
+            <ul class="footer__list footer__list--youtube">
+
+                <li class="footer__list-title">
+                    <h3> jQuery Youtube </h3>
+                </li>
+
+                <!--  -----  item 1  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        1 - Curso jQuery - Código Facilito
+                    </a>
+                </li>
+
+                <!--  -----  item 2  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        2 - Curso jQuery - Código Dani Code
+                    </a>
+                </li>
+
+                <!--  -----  item 3  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        3 - Curso jQuery - Píldoras Informáticas
+                    </a>
+                </li>
+
+                <!--  -----  item 4  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        4 - Curso jQuery - Código Mentor
+                    </a>
+                </li>
+
+                <!--  -----  item 5  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        5 - Curso jQuery - Midudev
+                    </a>
+                </li>
+
+                <!--  -----  item 6  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        6 - Curso jQuery 4.0 - Develoteca
+                    </a>
+                </li>
+
+                <!--  -----  item 7  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        7 - Curso jQuery - Divinector
+                    </a>
+                </li>
+
+                <!--  -----  item 8  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        8 - Curso jQuery - Jesus Conde
+                    </a>
+                </li>
+
+                <div class="footer__list-separator"> </div>
+
+            </ul>
+
+
+            <!--
+                ------------------------------------     
+                -----  list desarrolloweb.com  -----  
+                ------------------------------------
+            -->
+            <ul class="footer__list footer__list--desarrollowebcom">
+
+                <li class="footer__list-title">
+                    <h3> jQuery desarrolloweb.com </h3>
+                </li>
+
+                <li class="footer__item">
+
+                    
+                    <!--  -----  item 1  ------->
+                    <a href="#" data-id="udemy">
+                        1 - Manual de jQuery
+                    </a>
+
+                    <!--  -----  item 2  ------->
+                    <a href="#" data-id="udemy">
+                        2 - Videotutoriales de jQuery
+                    </a>
+
+                    <!--  -----  item 3  ------->
+                    <a href="#" data-id="udemy">
+                        3 - Taller de jQuery
+                    </a>
+
+                    <!--  -----  item 4  ------->
+                    <a href="#" data-id="udemy">
+                        4 - jQuery UI
+                    </a>
+
+                    <!--  -----  item 5  ------->
+                    <a href="#" data-id="udemy">
+                        5 - jQuery Mobile
+                    </a>
+
+                    <!--  -----  item 6  ------->
+                    <a href="#" data-id="udemy">
+                        6 - jQuery IO
+                    </a>
+
+                </li>
+
+                <div class="footer__list-separator"> </div>
+
+            </ul>
+
+
+            <!--
+                -----------------------------     
+                -----  list escuela.it  -----  
+                -----------------------------
+            -->
+            <ul class="footer__list footer__list--escuelait">
+
+                <li class="footer__list-title">
+                    <h3> jQuery escuela.it </h3>
+                </li>
+
+                <!--  -----  item 1  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="udemy">
+                        1 - Curso jQuery escuela.it
+                    </a>
+                </li>
+
+                <div class="footer__list-separator"> </div>
+
+            </ul>
+
+
+            <!--
+                -------------------------------     
+                -----  list Books jQuery  -----  
+                -------------------------------
+            -->
+            <ul class="footer__list footer__list--booksjquery">
+
+                <li class="footer__list-title">
+                    <h3> Libros de jQuery </h3>
+                </li>
+
+                <!--  -----  item 1  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        1 - Aprender jQuery con 100 Ejercícios Prácticos
+                    </a>
+                </li>
+
+                <!--  -----  item 2  -----  -->
+                <li class="footer__item">
+                    <a href="#" data-id="home">
+                        2 - Otros Libros
+                    </a>
+                </li>
+
+                <div class="footer__list-separator"> </div>
+
+            </ul>
+
+
+            <!--
+                ----------------------------------     
+                -----  list Manuales jQuery  -----  
+                ----------------------------------
+            -->
+            <ul class="footer__list footer__list--manualesjquery">
+                
+                <li class="footer__list-title"> 
+                    <h3> Manuales de jQuery </h3>
+                </li>
+                
+                <!--  -----  item 1  -------> 
+                <li class="footer__item">
+                <a href="#" data-id="home"> 
+                        1 - Manuales de jQuery
+                    </a>
+                </li>
+            
+                <!--  -----  item 2  ------->
+                <li class="footer__item">
+                <a href="#" data-id="home"> 
+                        2 - Otros Manuales
+                    </a>
+                </li>
+
+                <li class="footer__list-separator"> </li>
+
+            </ul>
+
+
+        </main>
+
+
+    </div>
+
+
+</footer>

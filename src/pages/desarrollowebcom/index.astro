@@ -1,0 +1,43 @@
+---
+
+/*
+    *  ----------------------------------------------------------------------  * 
+    *  -----  index.astro  --  /src/pages/desarrollowebcom/index.astro  -----  *
+    *  ----------------------------------------------------------------------  *
+*/
+
+
+import Layout from '@layouts/Layout.astro';
+
+import Header from '@components/layout//Header.astro';
+import NavbarBtn from '@components/buttons/NavbarBtn.astro';
+import Navbar from '@components/layout/Navbar.astro';
+import NavbarThemesJQueryUI from '@components/layout/NavbarThemesJQueryUI.astro';
+import MainDesarrollowebcom from '@components/layout/MainDesarrollowebcom.astro';
+import Footer from '@components/layout/Footer.astro';
+import NavbarBtnThemesJQueryUI from '@components/buttons/NavbarBtnThemesJQueryUI.astro';
+
+
+---
+
+<Layout
+    titlePage="Mis Proyectos de desarrolloweb.com con jQuery | Antony Dev"
+>
+
+    <div class="layout">
+        
+        <Header
+            titleHeaderMainFirst="jQuery.Antonydev.Tech"
+            titleHeaderPage="Mis Proyectos de desarrolloweb.com con jQuery"
+            titleHeaderMainLast="Antony.Dev"
+        />
+        
+        <NavbarBtn />
+        <NavbarBtnThemesJQueryUI />
+        <Navbar />
+        <NavbarThemesJQueryUI />
+        <MainDesarrollowebcom />
+        <Footer />
+    </div>
+
+</Layout>
