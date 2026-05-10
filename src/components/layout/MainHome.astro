@@ -20,8 +20,7 @@ import '@styles/pages/00-home.css';
 -->
 <main class="layout__main">
 
-
-
+           
     <div class="main__container">
 
 
@@ -30,22 +29,31 @@ import '@styles/pages/00-home.css';
             -----  Descripción de la Página  ----------
             -------------------------------------------  
         -->
-        <h2 
-            class="main__title"
-            title="Bienvenido a mis desarollos con jQuery"
-        >
-            Bienvenido a mis desarollos con jQuery
-        </h2>
+        <section class="main__section-info">
 
+            <!--  -----  Header de la Sección  -----  -->
+            <header class="section__header">
 
+                <h2 class="section__title" title="Bienvenidos a mis desarrollos con jQuery">
+                    Bienvenidos a mis desarrollos con jQuery
+                </h2>
+
+            </header>
+            
+        </section>
+
+       
+       
+        
         <section class="main__section main__section--home">
 
-            <h3 class="emoji-title">
+           
+            <h3 class="section__emoji-title">
                 
                 <!--  -----  Icon de jQuery -----  -->
                 <a href="https://jquery.com/" target="_blank" rel="noopener noreferrer">
                     <img 
-                        class="jquery-icon"
+                        class="emoji-title__icon"
                         src="/assets/img/jquery/jquery-icon.svg"
                         alt="Logo jQuery"
                         loading="lazy"
@@ -57,7 +65,7 @@ import '@styles/pages/00-home.css';
                 <!--  -----  Icon de jQuery UI -----  -->
                 <a href="https://jqueryui.com/" target="_blank" rel="noopener noreferrer">
                     <img 
-                        class="jquery-ui-icon"
+                        class="emoji-title__icon"
                         src="/assets/img/jquery-ui/jquery-ui-icon.svg"
                         alt="Logo jQuery UI"
                         loading="lazy"
@@ -66,7 +74,7 @@ import '@styles/pages/00-home.css';
                     
             </h3>
 
-            <div class="block">
+            <div class="section__block">
                 
                 <p>
                     ¡Hola! Soy Antonio Francisco Cutillas García, desarrollador frontend y entusiasta de jQuery.
@@ -98,7 +106,7 @@ import '@styles/pages/00-home.css';
                 ----------------------
             -->
             
-            <h3 class="emoji-title">
+            <h3 class="section__emoji-title">
                 
                 <!--  -----  Logo de Udemy -----  -->
                 <img
@@ -110,7 +118,7 @@ import '@styles/pages/00-home.css';
                 📘 Cursos de Udemy 
             </h3>
 
-            <div class="block">
+            <div class="section__block">
                 <p>
                     Colección de proyectos extraídos de diferentes formaciones, que abarcan desde la introducción a jQuery
                     hasta ejercicios avanzados, trucos profesionales, uso de jQuery UI y desarrollo de interfaces dinámicas.
@@ -126,7 +134,7 @@ import '@styles/pages/00-home.css';
                 -------------------------
             -->
 
-            <h3 class="emoji-title">
+            <h3 class="section__emoji-title">
                 
                 <!--  -----  Logo de YouTube -----  -->
                 <img
@@ -138,7 +146,7 @@ import '@styles/pages/00-home.css';
                 ▶️ Cursos de YouTube
             </h3>
 
-            <div class="block">
+            <div class="section__block">
                 <p>
                     Implementaciones basadas en tutoriales de creadores reconocidos como CódigoFacilito, Dani Code,
                     MiduDev, Píldoras Informáticas y otros profesores que enseñan jQuery desde distintos enfoques.
@@ -154,7 +162,7 @@ import '@styles/pages/00-home.css';
                 -----------------------------------
             -->
             
-            <h3 class="emoji-title">
+            <h3 class="section__emoji-title">
                 
                 <!--  -----  Logo de Desarrolloweb.com -----  -->
                 <img
@@ -166,7 +174,7 @@ import '@styles/pages/00-home.css';
                 🌐 Material de desarrolloweb.com
             </h3>
 
-            <div class="block">
+            <div class="section__block">
                 <p>
                     Proyectos derivados de manuales y talleres clásicos de jQuery, incluyendo jQuery UI, jQuery Mobile
                     y otros contenidos históricos que marcaron la base de muchas técnicas frontend actuales.
@@ -182,7 +190,7 @@ import '@styles/pages/00-home.css';
                 ---------------------------- 
             -->  
 
-            <h3 class="emoji-title">
+            <h3 class="section__emoji-title">
                 
                 <!--  -----  Logos de Escuela.it -----  -->
                 <img
@@ -194,7 +202,7 @@ import '@styles/pages/00-home.css';
                 🏫 Curso de escuela.it
             </h3>
 
-            <div class="block">
+            <div class="section__block">
                 <p>
                     Reproducción y adaptación de ejercicios propuestos en este curso formativo, aplicando buenas prácticas,
                     organización de código y ejemplos basados en casos reales.
@@ -208,7 +216,7 @@ import '@styles/pages/00-home.css';
                 ----------------------------------------
             -->
 
-            <h3 class="emoji-title">
+            <h3 class="section__emoji-title">
                 
                 <!--  -----  Banner de jQuery Books -----  -->
                 <img
@@ -230,7 +238,7 @@ import '@styles/pages/00-home.css';
                 
             </h3>
 
-            <div class="block">
+            <div class="section__block">
                 <p>
                     Ejercicios prácticos desarrollados a partir de libros como <em> Aprende jQuery con 100 Ejercicios Prácticos </em>
                     y otros manuales clásicos. Estos proyectos incluyen desde funciones esenciales hasta ejercicios complejos
@@ -245,9 +253,9 @@ import '@styles/pages/00-home.css';
                 -------------------------
             -->
 
-            <h3 class="emoji-title">🔧 Objetivo del sitio </h3>
+            <h3 class="section__emoji-title">🔧 Objetivo del sitio </h3>
 
-            <div class="block">
+            <div class="section__block">
                 <p> Este sitio no solo recopila mis prácticas: </p>
 
                 <ul>
@@ -277,9 +285,9 @@ import '@styles/pages/00-home.css';
                 -------------------------
             -->
 
-            <h3 class="emoji-title"> 🎯 En resumen </h3>
+            <h3 class="section__emoji-title"> 🎯 En resumen </h3>
 
-            <div class="block">
+            <div class="section__block">
                 <p>
                     Este proyecto es una plataforma personal, educativa y de referencia donde reúno todo mi recorrido
                     aprendiendo jQuery, organizando cada ejemplo y manteniendo un entorno limpio, estructurado y actualizado
@@ -296,13 +304,18 @@ import '@styles/pages/00-home.css';
             -----  Cursos de Udemy  -----
             -----------------------------  
         -->
+        <section class="main__section-info">
 
-        <h2 
-            class="main__title"
-            title="Mis Proyectos jQuery de Udemy"
-        >
-            Mis Proyectos jQuery de Udemy
-        </h2>
+            <!--  -----  Header de la Sección  -----  -->
+            <header class="section__header">
+
+                <h2 class="section__title" title="Mis Cursos de Udemy con jQuery">
+                    Mis Cursos de Udemy con jQuery
+                </h2>
+
+            </header>
+            
+        </section>
 
 
         <section class="main__section">
@@ -538,13 +551,18 @@ import '@styles/pages/00-home.css';
             -----  Cursos de Youtube  -----
             -------------------------------  
         -->
+        <section class="main__section-info">
 
-        <h2 
-            class="main__title"
-            title="Mis Proyectos jQuery de Youtube"
-        >
-            Mis Proyectos jQuery de Youtube
-        </h2>
+            <!--  -----  Header de la Sección  -----  -->
+            <header class="section__header">
+
+                <h2 class="section__title" title="Mis Cursos de YouTube con jQuery">
+                    Mis Cursos de YouTube con jQuery
+                </h2>
+
+            </header>
+            
+        </section>
 
 
         <section class="main__section">
@@ -678,13 +696,18 @@ import '@styles/pages/00-home.css';
             -----  Cursos de desarrolloweb.com  -----
             -----------------------------------------
         -->
+         <section class="main__section-info">
 
-        <h2 
-            class="main__title"
-            title="Mis Proyectos jQuery de desarrolloweb.com"
-        >
-            Mis Proyectos jQuery de desarrolloweb.com
-        </h2>
+            <!--  -----  Header de la Sección  -----  -->
+            <header class="section__header">
+
+                <h2 class="section__title" title="Mis Cursos de desarrolloweb.com con jQuery">
+                    Mis cursos de desarrolloweb.com con jQuery
+                </h2>
+
+            </header>
+            
+        </section>
 
 
         <section class="main__section">
@@ -820,13 +843,18 @@ import '@styles/pages/00-home.css';
             -----  Curso jQuery escuela.it  -----
             -------------------------------------
         -->
+         <section class="main__section-info">
 
-        <h2 
-            class="main__title"
-            title="Curso jQuery de escuela.it"
-            >
-            Curso jQuery de escuela.it
-        </h2>
+            <!--  -----  Header de la Sección  -----  -->
+            <header class="section__header">
+
+                <h2 class="section__title" title="Mis Cursos de escuela.it con jQuery">
+                    Mis Cursos de escuela.it con jQuery
+                </h2>
+
+            </header>
+            
+        </section>
 
 
         <section class="main__section main__section--escuela-it">
@@ -861,13 +889,19 @@ import '@styles/pages/00-home.css';
             -----  Libros de jQuery  -----
             ------------------------------
         -->
+        <section class="main__section-info">
 
-        <h2 
-            class="main__title"
-            title="Libros de jQuery"
-        >
-            Libros de jQuery
-        </h2>
+            <!--  -----  Header de la Sección  -----  -->
+            <header class="section__header">
+
+                <h2 class="section__title" title="Libros de jQuery">
+                    Libros de jQuery
+                </h2>
+
+            </header>
+            
+        </section>
+
 
 
         <section class="main__section main__section--books">
@@ -901,13 +935,18 @@ import '@styles/pages/00-home.css';
             -----  Manuales de jQuery  -----
             --------------------------------
         -->
+         <section class="main__section-info">
 
-        <h2 
-            class="main__title"
-            title="Manuales de jQuery"
-        >
-            Manuales de jQuery
-        </h2>
+            <!--  -----  Header de la Sección  -----  -->
+            <header class="section__header">
+
+                <h2 class="section__title" title="Manuales de jQuery">
+                    Manuales de jQuery
+                </h2>
+
+            </header>
+            
+        </section>
 
 
         <section class="main__section main__section--manuales">
@@ -938,3 +977,103 @@ import '@styles/pages/00-home.css';
     </div>
 
 </main>
+
+
+<style>
+
+    /*
+        -----------------------------------------------
+        ----------  MainHome.astro  -------------------
+        -----------------------------------------------
+    */
+
+    .main__section--home {
+        width: 95%;
+        max-width: 120rem;
+        padding: 2rem;
+        background-color: #f9f9f9;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+
+    /* -----------------------------------------------
+       Block: section__emoji-title
+       Títulos h3 con emojis e iconos de plataforma
+       ----------------------------------------------- */
+
+    .section__emoji-title {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        font-size: 1.6rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        font-weight: 700;
+        border-bottom: 4px solid #2b7bff33;
+        background-color: aliceblue;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    @media (min-width: 480px) {
+
+        .section__emoji-title {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5rem;
+            font-size: 2rem;
+        }
+    }
+
+
+    /* -----------------------------------------------
+       Element: emoji-title__icon
+       Iconos (jQuery / jQuery UI) dentro de section__emoji-title
+       ----------------------------------------------- */
+
+    .emoji-title__icon {
+        width: 3rem;
+        height: auto;
+    }
+
+
+    /* -----------------------------------------------
+       Element: section__block
+       Bloque de texto descriptivo dentro de main__section--home
+       ----------------------------------------------- */
+
+    .section__block {
+        margin: 2.5rem 0;
+        padding: 2rem;
+        border-left: 4px solid #2b7bff33;
+        border-right: 4px solid #2b7bff33;
+        border-bottom: 4px solid #2b7bff33;
+    }
+
+    .section__block p,
+    .section__block span {
+        margin-bottom: 1.6rem;
+        text-align: justify;
+    }
+
+    .section__block strong,
+    .section__block b {
+        font-weight: 700;
+    }
+
+    .section__block ul {
+        padding-left: 2.5rem;
+        margin: 1rem 0 2rem 0;
+    }
+
+    .section__block li {
+        margin: 0.5rem 0;
+    }
+
+</style>
