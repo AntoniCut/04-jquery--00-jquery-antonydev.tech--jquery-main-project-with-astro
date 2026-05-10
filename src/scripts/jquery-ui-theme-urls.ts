@@ -39,3 +39,5 @@ export type JQueryUiThemeName = keyof typeof jqueryUiThemeHrefs;
 
 export const defaultJQueryUiThemeName: JQueryUiThemeName = 'base';
 export const defaultJQueryUiThemeHref = jqueryUiThemeHrefs[defaultJQueryUiThemeName];
+
+console.log('defaultJQueryUiThemeHref => ', defaultJQueryUiThemeHref);

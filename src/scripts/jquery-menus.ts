@@ -92,7 +92,13 @@ const getThemeNameFromHref = (themeHref?: string) => {
     return matchingTheme?.[0] ?? defaultJQueryUiThemeName;
 };
 
+const refreshTooltips = () => {
+    destroyTooltips();
+    initializeTooltips();
+};
+
 const applyTheme = (themeName: JQueryUiThemeName) => {
+    
     const $theme = getThemeLink();
     const themeHref = jqueryUiThemeHrefs[themeName] ?? defaultJQueryUiThemeHref;
 
@@ -100,8 +106,27 @@ const applyTheme = (themeName: JQueryUiThemeName) => {
         return;
     }
 
-    $theme.attr('href', themeHref);
+    if ($theme.attr('href') !== themeHref) {
+        $theme.attr('href', themeHref);
+        refreshTooltips();
+    }
+
     markActiveTheme(themeName);
+};
+
+const destroyTooltips = () => {
+    
+    const $document = $(document);
+
+    if (typeof $document.tooltip !== 'function') {
+        return;
+    }
+
+    try {
+        $document.tooltip('destroy');
+    } catch {
+        // El widget no estaba inicializado
+    }
 };
 
 const initializeTooltips = () => {
@@ -111,15 +136,11 @@ const initializeTooltips = () => {
         return;
     }
 
-    if ($document.tooltip('instance')) {
-        $document.tooltip('destroy');
-    }
-
     $document.tooltip();
 };
 
 const syncInitialState = () => {
-    
+
     const menuMain = getMainMenu();
     const menuThemes = getThemesMenu();
     const $theme = getThemeLink();
@@ -137,7 +158,7 @@ const syncInitialState = () => {
 };
 
 const bindHandlers = () => {
-    $(document).off(EVENT_NAMESPACE);
+    //$(document).off(EVENT_NAMESPACE);
 
     $(document).on(`click${EVENT_NAMESPACE}`, '.navbar__btn-open', function (event) {
         event.stopPropagation();
@@ -164,10 +185,12 @@ const bindHandlers = () => {
     });
 
     $(document).on(`click${EVENT_NAMESPACE}`, '#linksThemesContainer a', function (event) {
+        
         event.preventDefault();
         event.stopPropagation();
 
         const themeName = $(this).data('theme');
+        console.log('Tema seleccionado:', themeName);
 
         if (typeof themeName !== 'string' || !(themeName in jqueryUiThemeHrefs)) {
             return;
@@ -198,8 +221,24 @@ const bindHandlers = () => {
     });
 };
 
+
+const initializeDraggable = () => {
+    
+    const layoutNavbar = $('#layoutNavbar');
+
+    const layoutNavbarThemesUI = $('#layoutNavbarThemesUI');
+
+    if (layoutNavbar.length && typeof layoutNavbar.draggable === 'function') 
+        layoutNavbar.draggable();
+
+    if (layoutNavbarThemesUI.length && typeof layoutNavbarThemesUI.draggable === 'function')
+        layoutNavbarThemesUI.draggable();
+    
+};
+
 export const initializeJQueryMenus = () => {
     syncInitialState();
     bindHandlers();
     initializeTooltips();
+    initializeDraggable();
 };

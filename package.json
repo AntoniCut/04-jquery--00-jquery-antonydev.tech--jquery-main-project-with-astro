@@ -14,7 +14,7 @@
   "dependencies": {
     "astro": "^6.2.1",
     "jquery": "^4.0.0",
-    "jquery-ui-dist": "^1.13.3"
+    "jquery-ui": "1.14.2"
   },
   "devDependencies": {
     "@types/jquery": "^4.0.0",

@@ -14,9 +14,9 @@ importers:
       jquery:
         specifier: ^4.0.0
         version: 4.0.0
-      jquery-ui-dist:
-        specifier: ^1.13.3
-        version: 1.13.3
+      jquery-ui:
+        specifier: 1.14.2
+        version: 1.14.2
     devDependencies:
       '@types/jquery':
         specifier: ^4.0.0
@@ -859,11 +859,8 @@ packages:
     resolution: {integrity: sha512-e6rvdUCiQCAuumZslxRJWR/Doq4VpPR82kqclvcS0efgt430SlGIk05vdCN58+VrzgtIcfNODjozVielycD4Sw==}
     engines: {node: '>=16'}
 
-  jquery-ui-dist@1.13.3:
-    resolution: {integrity: sha512-qeTR3SOSQ0jgxaNXSFU6+JtxdzNUSJKgp8LCzVrVKntM25+2YBJW1Ea8B2AwjmmSHfPLy2dSlZxJQN06OfVFhg==}
-
-  jquery@3.7.1:
-    resolution: {integrity: sha512-m4avr8yL8kmFN8psrbFFFmB/If14iN5o9nw/NgnnM+kybDJpRsAynV2BsfpTYrTRysYUdADVD7CkUUizgkpLfg==}
+  jquery-ui@1.14.2:
+    resolution: {integrity: sha512-1gSl7PUjyipa2adSr780Ujk16faicrV7PjPPzPtvWk7tTqBnsqp67NNV9jZK2+BIxUPXWSnIUU/LBCgwgGZE+Q==}
 
   jquery@4.0.0:
     resolution: {integrity: sha512-TXCHVR3Lb6TZdtw1l3RTLf8RBWVGexdxL6AC8/e0xZKEpBflBsjh9/8LXw+dkNFuOyW9B7iB3O1sP7hS0Kiacg==}
@@ -2253,11 +2250,9 @@ snapshots:
     dependencies:
       is-inside-container: 1.0.0
 
-  jquery-ui-dist@1.13.3:
+  jquery-ui@1.14.2:
     dependencies:
-      jquery: 3.7.1
-
-  jquery@3.7.1: {}
+      jquery: 4.0.0
 
   jquery@4.0.0: {}
 
