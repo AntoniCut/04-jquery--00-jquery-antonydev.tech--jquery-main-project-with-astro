@@ -27,7 +27,9 @@ declare global {
  *    que se resuelve cuando ambas bibliotecas están listas para usar.
  * - `En caso contrario` se resuelve inmediatamente
  */
+
 let librariesReady: Promise<void> | null = null;
+
 
 
 /**
@@ -39,8 +41,10 @@ let librariesReady: Promise<void> | null = null;
  *    que se resuelve cuando ambas bibliotecas están listas para usar.
  * - `En caso contrario` se resuelve inmediatamente
  */
+
 export const loadJQueryAndJQueryUi = async () => {
 
+    // -----  `Si las bibliotecas ya están cargadas, devolver la promesa existente` -----
     librariesReady ??= (async () => {
 
 

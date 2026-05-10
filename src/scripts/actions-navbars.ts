@@ -11,6 +11,7 @@ import {
     type JQueryUiThemeName,
 } from './jquery-ui-theme-urls';
 
+
 import {
     applyTheme,
     getRestoredThemeName,
@@ -18,15 +19,40 @@ import {
 } from './change-themes-jquery-ui';
 
 
+
+/**
+ * ----------------------------
+ * -----  `MenuControls`  -----
+ * ----------------------------
+ * - Define la estructura de los controles de un menú (contenedor, botón de abrir y botón de cerrar).
+ * - Se utiliza para tipar los objetos que representan los menús en el DOM.
+ */
+
 type MenuControls = {
     container: JQuery<HTMLElement>;
     btnOpen: JQuery<HTMLElement>;
     btnClose: JQuery<HTMLElement>;
 };
 
+
+
 const EVENT_NAMESPACE = '.astroJqueryMenus';
 
+
+
+/**
+ * ---------------------------
+ * -----  `getJQuery()`  -----
+ * ---------------------------
+ * - Obtiene la instancia de jQuery disponible en el objeto `window`.
+ * - Lanza un error si jQuery no está cargado.
+ * @returns La instancia de jQuery.
+ * @throws Error si jQuery no está cargado.
+ */
+
 const getJQuery = () => {
+    
+    /** -----  Instancia de jQuery disponible en el objeto `window`  ----- */
     const jqueryInstance = window.jQuery ?? window.$;
 
     if (!jqueryInstance) {
@@ -36,7 +62,20 @@ const getJQuery = () => {
     return jqueryInstance;
 };
 
+
+
+/**  -----  Obtenemos la `instancia de jQuery` disponible en el objeto `window`  ----- */
 const $ = getJQuery();
+
+
+
+/**
+ * -----------------------------
+ * -----  `getMainMenu()`  -----
+ * -----------------------------
+ * - Devuelve los controles del menú principal de navegación.
+ * @returns Objeto `MenuControls` con el contenedor y los botones de apertura/cierre.
+ */
 
 const getMainMenu = (): MenuControls => ({
     container: $('.navbar__container'),
@@ -44,15 +83,43 @@ const getMainMenu = (): MenuControls => ({
     btnClose: $('.navbar__btn-close'),
 });
 
+
+
+/**
+ * -------------------------------
+ * -----  `getThemesMenu()`  -----
+ * -------------------------------
+ * - Devuelve los controles del menú de temas de jQuery UI.
+ * @returns Objeto `MenuControls` con el contenedor y los botones de apertura/cierre.
+ */
 const getThemesMenu = (): MenuControls => ({
     container: $('#linksThemesContainer'),
     btnOpen: $('.navbar-ui__btn-open'),
     btnClose: $('.navbar-ui__btn-close'),
 });
 
+
+
+/**
+ * ----------------------------------
+ * -----  `showMenuContainer()`  -----
+ * ----------------------------------
+ * - Muestra el contenedor de un menú con una animación `slideDown`.
+ * @param container - Elemento jQuery que representa el contenedor del menú.
+ */
 const showMenuContainer = (container: JQuery<HTMLElement>) => {
     container.css('display', 'flex').hide().slideDown(250);
 };
+
+
+
+/**
+ * --------------------------
+ * -----  `openMenu()`  -----
+ * --------------------------
+ * - Abre un menú mostrando su contenedor y actualizando la visibilidad de sus botones.
+ * @param menu - Objeto `MenuControls` del menú a abrir.
+ */
 
 const openMenu = (menu: MenuControls) => {
     menu.container.stop(true, true);
@@ -61,21 +128,52 @@ const openMenu = (menu: MenuControls) => {
     menu.btnClose.show();
 };
 
+
+
+/**
+ * ---------------------------
+ * -----  `closeMenu()`  -----
+ * ---------------------------
+ * - Cierra un menú ocultando su contenedor con `slideUp` y actualizando la visibilidad de sus botones.
+ * @param menu - Objeto `MenuControls` del menú a cerrar.
+ */
+
 const closeMenu = (menu: MenuControls) => {
     menu.container.stop(true, true).slideUp(250);
     menu.btnOpen.show();
     menu.btnClose.hide();
 };
 
-const clickInside = (element: JQuery<HTMLElement>, target: EventTarget | null) => {
-    if (!(target instanceof HTMLElement)) {
-        return false;
-    }
 
+
+/**
+ * -----------------------------
+ * -----  `clickInside()`  -----
+ * -----------------------------
+ * - Comprueba si el `target` de un evento de click se encuentra dentro de un elemento jQuery.
+ * @param element - Elemento jQuery que actúa como contenedor.
+ * @param target - `EventTarget` del evento de click.
+ * @returns `true` si el target está dentro del elemento, `false` en caso contrario.
+ */
+
+const clickInside = (element: JQuery<HTMLElement>, target: EventTarget | null) => {
+    
+    if (!(target instanceof HTMLElement)) 
+        return false;
+    
     return $(target).closest(element).length > 0;
 };
 
 
+
+/**
+ * ----------------------------------
+ * -----  `syncInitialState()`  -----
+ * -----------------------------------
+ * - Sincroniza el estado visual inicial de los menús y aplica el tema de jQuery UI guardado.
+ * - Oculta ambos menús y sus botones de cierre, muestra los botones de apertura.
+ * - Recupera el tema almacenado en `localStorage` y lo aplica al `<link id="theme">`.
+ */
 
 const syncInitialState = () => {
 
@@ -93,6 +191,18 @@ const syncInitialState = () => {
     const currentThemeName = getRestoredThemeName();
     applyTheme(currentThemeName);
 };
+
+
+
+/**
+ * ------------------------------
+ * -----  `bindHandlers()`  -----
+ * ------------------------------
+ * - Registra todos los manejadores de eventos delegados en el `document`.
+ * - Gestiona la apertura/cierre de menús, el cambio de tema de jQuery UI
+ *   y el cierre al hacer click fuera de los menús.
+ * - Usa el namespace `EVENT_NAMESPACE` para poder desregistrar los handlers con `.off()`.
+ */
 
 const bindHandlers = () => {
     
@@ -160,6 +270,15 @@ const bindHandlers = () => {
 };
 
 
+
+/**
+ * -------------------------------------
+ * -----  `initializeDraggable()`  -----
+ * -------------------------------------
+ * - Inicializa el widget `draggable` de jQuery UI en los navbars
+ *   `#layoutNavbar` y `#layoutNavbarThemesUI` si el widget está disponible.
+ */
+
 const initializeDraggable = () => {
     
     const layoutNavbar = $('#layoutNavbar');
@@ -175,14 +294,15 @@ const initializeDraggable = () => {
 };
 
 
+
 /**
  * ---------------------------------------------
  * -----  `preventThemeLinksNavigation()`  -----
  * ---------------------------------------------
- * Intercepta los clicks en los botones de tema en fase de CAPTURA,
- * antes de que el ClientRouter de Astro pueda procesar el href="#" y
- * añadir la almohadilla a la URL. Llama a preventDefault() sin detener
- * la propagación, de modo que jQuery recibe el evento igualmente.
+ * - Intercepta los clicks en los botones de tema en fase de CAPTURA,
+ *   antes de que el ClientRouter de Astro pueda procesar el href="#" y
+ *   añadir la almohadilla a la URL. Llama a preventDefault() sin detener
+ *   la propagación, de modo que jQuery recibe el evento igualmente.
  */
 const preventThemeLinksNavigation = () => {
     
@@ -200,12 +320,15 @@ const preventThemeLinksNavigation = () => {
 };
 
 
+
 /**
  * --------------------------------
  * -----  `actionsNavbars()`  ----- 
  * --------------------------------
+ * - Punto de entrada principal. Inicializa todos los comportamientos interactivos de los navbars:
+ *   previene la navegación del router de Astro en los links de temas, sincroniza el estado
+ *   inicial, registra los handlers de eventos, inicializa los tooltips y el draggable.
  */
-
 
 export const actionsNavbars = () => {
     preventThemeLinksNavigation();
