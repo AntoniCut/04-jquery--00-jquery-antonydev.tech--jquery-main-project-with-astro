@@ -26,13 +26,17 @@ const { titlePage } = Astro.props as Props;
 
 <!doctype html>
 <html lang="es">
+    
     <head>
+        
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width" />
+        
         <meta
             name="description"
             content="Mis desarrollos con jQuery by AntonyDevTech Freelancer."
         />
+        
         <meta name="theme-color" content="#F7E7C0" />
         <meta name="MobileOptimized" content="width" />
         <meta name="HandheldFriendly" content="true" />
@@ -47,17 +51,47 @@ const { titlePage } = Astro.props as Props;
             type="image/svg+xml"
             href="/assets/favicon/jquery-favicon.svg"
         />
+        
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="apple-touch-icon" href="/manifest/jquery-logo-512x512.png" />
+        
         <link id="theme" rel="stylesheet" href={defaultJQueryUiThemeHref} />
-        <link id="theme" rel="stylesheet" href="/themes-jquery-ui/blitzer/jquery-ui.min.css" /> 
         <meta name="generator" content={Astro.generator} />
 
+        <!--
+            *  -----  Restaura el tema jQuery UI guardado en localStorage  ----- 
+            *  -----  antes de pintar la página (evita el flash)           ----- 
+        -->
+        <script is:inline>
+            
+            (function () {
+                
+                try {
+                    
+                    var saved = localStorage.getItem('jqui-theme-href');
+                    
+                    if (saved) {
+                        var link = document.getElementById('theme');
+                        if (link) link.setAttribute('href', saved);
+                    }
+
+                } catch (e) { 
+                    /* localStorage no disponible (modo privado, etc.) */ 
+                }
+
+            })();
+
+        </script>
+
         <title>{titlePage}</title>
+        
         <ClientRouter />
+
     </head>
 
+
     <body>
+        
         <Loader />
 
         <slot />

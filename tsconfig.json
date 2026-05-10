@@ -10,6 +10,9 @@
     "compilerOptions": {
         "baseUrl": ".",
         "paths": {
+             "@src/*": [
+                "src/*"
+            ],
             "@components/*": [
                 "src/components/*"
             ],
@@ -22,6 +25,9 @@
             "@consts/*": [
                 "src/consts/*"
             ],
+            "@libs/*": [
+                "src/libs/*"
+            ],
             "@interfaces/*": [
                 "src/interfaces/*"
             ],
@@ -31,9 +37,7 @@
             "@assets/*": [
                 "src/assets/*"
             ],
-            "@src/*": [
-                "src/*"
-            ]
+           
         },
         "ignoreDeprecations": "6.0",
         "types": ["astro/client", "node", "jquery", "jqueryui"]

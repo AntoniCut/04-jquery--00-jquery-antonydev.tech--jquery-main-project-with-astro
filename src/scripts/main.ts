@@ -37,9 +37,9 @@ export const initializeMain = async () => {
     try {
         await loadJQueryAndJQueryUi();
 
-        const { initializeJQueryMenus } = await import('./jquery-menus');
+        const { actionsNavbars } = await import('./actions-navbars');
 
-        initializeJQueryMenus();
+        actionsNavbars();
     
     } finally {
         

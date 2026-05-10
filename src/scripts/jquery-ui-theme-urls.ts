@@ -1,4 +1,8 @@
-
+/*
+    *  -------------------------------------------------------------------------------  *
+    *  -----  jquery-ui-theme-urls.ts  --  /src/scripts/jquery-ui-theme-urls.ts  -----  *
+    *  -------------------------------------------------------------------------------  *
+*/
 
 
 
@@ -33,6 +37,7 @@ export const jqueryUiThemeHrefs = {
     'swanky-purse': buildThemeHref('swanky-purse'),
     'trontastic': buildThemeHref('trontastic'),
     'vader': buildThemeHref('vader'),
+    'custom': buildThemeHref('custom'),
 } as const;
 
 export type JQueryUiThemeName = keyof typeof jqueryUiThemeHrefs;

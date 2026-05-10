@@ -31,6 +31,9 @@ let librariesReady: Promise<void> | null = null;
 
 
 /**
+ * --------------------------------------
+ * -----  `loadJQueryAndJQueryUi()` -----
+ * --------------------------------------
  * - `Carga las bibliotecas jQuery y jQuery UI dinámicamente`
  * - `Sì jQuery y jQuery UI estan cargados` devuelve una promesa 
  *    que se resuelve cuando ambas bibliotecas están listas para usar.
@@ -51,11 +54,12 @@ export const loadJQueryAndJQueryUi = async () => {
 
         console.log(
             '%c jQuery version:',
-            'color: white; background-color: #0868ac; font-weight: bold; padding: 5px 10px;', $.fn.jquery
+            'color: white; background-color: #0868ac; font-weight: bold; padding: 5px 10px;', 
+            $.fn.jquery
         );
 
-        /// -----  `Cargar jQuery UI dinámicamente` -----
-        await import('jquery-ui/dist/jquery-ui.js');
+        /// -----  `Cargar jQuery UI dinámicamente desde node_modules` -----
+        await import('@libs/jquery-ui');
 
         // -----  `Verificar que jQuery UI se haya cargado correctamente` -----
         if (!$.ui || !$.ui.version) {
@@ -64,7 +68,8 @@ export const loadJQueryAndJQueryUi = async () => {
 
         console.log(
             '%c jQuery UI version:',
-            'color: white; background-color: #f89c15; font-weight: bold; padding: 5px 10px;', $.ui.version
+            'color: white; background-color: #f89c15; font-weight: bold; padding: 5px 10px;', 
+            $.ui.version
         );
 
 
